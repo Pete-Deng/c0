@@ -16,8 +16,8 @@ import tokenizer.Tokenizer;
 
 public class App {
     public static void main(String[] args) throws CompileError, IOException {
-        File input = new File("input");
-        DataOutputStream dos = new DataOutputStream(new FileOutputStream("output"));
+        File input = new File(args[1]);
+        DataOutputStream dos = new DataOutputStream(new FileOutputStream(args[2]));
         Scanner scanner;
         scanner = new Scanner(input);
         var iter = new StringIter(scanner);
