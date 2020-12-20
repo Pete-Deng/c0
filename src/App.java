@@ -36,8 +36,8 @@ public class App {
             } catch (Exception e) {
                 // 遇到错误不输出，直接退出
                 System.err.println(e);
-                System.exit(0);
-                return;
+                System.exit(-1);
+                return -1;
             }
         }
         else if(args[0].equals("--analyse")){
